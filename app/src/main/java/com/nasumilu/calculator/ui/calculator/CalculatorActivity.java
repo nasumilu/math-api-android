@@ -19,10 +19,12 @@ import java.util.Arrays;
 public class CalculatorActivity extends AppCompatActivity {
 
     private Equation equation;
+    private String token;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.token = getIntent().getExtras().getString("token");
         // https://stackoverflow.com/questions/22395417/error-strictmodeandroidblockguardpolicy-onnetwork
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
@@ -30,7 +32,7 @@ public class CalculatorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_calculator_active);
 
         final TextView equationView = findViewById(R.id.equationField);
-        final NetworkCalculatorService service = new NetworkCalculatorService();
+        final NetworkCalculatorService service = new NetworkCalculatorService(this.token);
         this.equation = new Equation();
 
         // updates the equation view

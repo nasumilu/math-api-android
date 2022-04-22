@@ -1,5 +1,6 @@
 package com.nasumilu.calculator.data;
 
+import android.util.Base64;
 import android.util.Log;
 
 import com.nasumilu.calculator.data.model.LoggedInUser;
@@ -58,16 +59,18 @@ public class LoginDataSource {
 
                 var service = retrofit.create(LoginService.class);
                 var call = service.token("password",
-                        "[CLIENT SECRET HERE]",
-                        "[CLIENT ID HERE]",
+                        "",
+                        "",
                         this.USERNAME,
                         this.PASSWORD);
 
                 var response = call.execute();
 
             if(response.isSuccessful()) {
-                Log.i("Token", response.body());
-                return new Result.Success<>(new LoggedInUser("Test", "Test", "Test"));
+                var token = response.body();
+
+                Log.i("Token", token);
+                return new Result.Success<>(new LoggedInUser(token));
             }
             return new Result.Error(new Exception("Not Authorized"));
         }

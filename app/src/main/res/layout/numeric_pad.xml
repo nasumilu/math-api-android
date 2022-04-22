@@ -2,50 +2,57 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/numericPad"
+    android:gravity="center"
+    android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
     <TableLayout
         android:id="@+id/numericPadLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:layout_centerInParent="true">
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
 
             <Button
                 android:id="@+id/bkspBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
                 android:layout_margin="2dp"
+                android:layout_weight="1"
                 android:text="@string/bksp_btn_text"
                 android:theme="@style/Theme.Calculator.Danger" />
 
             <Button
                 android:id="@+id/openParenthesisBtn"
-                android:layout_width="98dp"
-                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
                 android:layout_margin="2dp"
+                android:layout_weight="1"
                 android:tag="@string/open_parenthesis_btn_text"
                 android:text="@string/open_parenthesis_btn_text"
                 android:theme="@style/Theme.Calculator.Secondary" />
 
             <Button
                 android:id="@+id/closeParenthesisBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
                 android:layout_margin="2dp"
+                android:layout_weight="1"
                 android:tag="@string/close_parenthesis_btn_text"
                 android:text="@string/close_parenthesis_btn_text"
                 android:theme="@style/Theme.Calculator.Secondary" />
 
             <Button
                 android:id="@+id/divisionBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
                 android:layout_margin="2dp"
+                android:layout_weight="1"
                 android:tag="@string/division_btn_text"
                 android:text="@string/division_btn_text"
                 android:theme="@style/Theme.Calculator.Secondary" />
@@ -53,123 +60,138 @@
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
 
             <Button
                 android:id="@+id/sevenBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
                 android:layout_margin="2dp"
+                android:layout_weight="1"
                 android:tag="@string/seven_btn_text"
                 android:text="@string/seven_btn_text"
                 android:theme="@style/Theme.Calculator.Secondary" />
 
             <Button
                 android:id="@+id/eightBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
                 android:layout_margin="2dp"
+                android:layout_weight="1"
                 android:tag="@string/eight_btn_text"
                 android:text="@string/eight_btn_text"
                 android:theme="@style/Theme.Calculator.Secondary" />
 
             <Button
                 android:id="@+id/nineBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
                 android:layout_margin="2dp"
+                android:layout_weight="1"
                 android:tag="@string/nine_btn_text"
                 android:text="@string/nine_btn_text"
                 android:theme="@style/Theme.Calculator.Secondary" />
 
             <Button
                 android:id="@+id/multiplyBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
                 android:layout_margin="2dp"
+                android:layout_weight="1"
                 android:tag="@string/multiply_btn_text"
                 android:text="@string/multiply_btn_text"
                 android:theme="@style/Theme.Calculator.Secondary" />
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
 
             <Button
                 android:id="@+id/fourBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
                 android:layout_margin="2dp"
+                android:layout_weight="1"
                 android:tag="@string/four_btn_text"
                 android:text="@string/four_btn_text"
                 android:theme="@style/Theme.Calculator.Secondary" />
 
             <Button
                 android:id="@+id/fiveBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
                 android:layout_margin="2dp"
+                android:layout_weight="1"
                 android:tag="@string/five_btn_text"
                 android:text="@string/five_btn_text"
                 android:theme="@style/Theme.Calculator.Secondary" />
 
             <Button
                 android:id="@+id/sixBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
                 android:layout_margin="2dp"
+                android:layout_weight="1"
                 android:tag="@string/six_btn_text"
                 android:text="@string/six_btn_text"
                 android:theme="@style/Theme.Calculator.Secondary" />
 
             <Button
                 android:id="@+id/subtractionBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
                 android:layout_margin="2dp"
+                android:layout_weight="1"
                 android:tag="@string/subtraction_btn_text"
                 android:text="@string/subtraction_btn_text"
                 android:theme="@style/Theme.Calculator.Secondary" />
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
 
             <Button
                 android:id="@+id/oneBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
                 android:layout_margin="2dp"
+                android:layout_weight="1"
                 android:tag="@string/one_btn_text"
                 android:text="@string/one_btn_text"
                 android:theme="@style/Theme.Calculator.Secondary" />
 
             <Button
                 android:id="@+id/twoBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
                 android:layout_margin="2dp"
+                android:layout_weight="1"
                 android:tag="@string/two_btn_text"
                 android:text="@string/two_btn_text"
                 android:theme="@style/Theme.Calculator.Secondary" />
 
             <Button
                 android:id="@+id/threeBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
                 android:layout_margin="2dp"
+                android:layout_weight="1"
                 android:tag="@string/three_btn_text"
                 android:text="@string/three_btn_text"
                 android:theme="@style/Theme.Calculator.Secondary" />
 
             <Button
                 android:id="@+id/additionBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
                 android:layout_margin="2dp"
+                android:layout_weight="1"
                 android:tag="@string/addition_btn_text"
                 android:text="@string/addition_btn_text"
                 android:theme="@style/Theme.Calculator.Secondary" />
@@ -177,39 +199,44 @@
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
 
             <Button
                 android:id="@+id/zeroBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
                 android:layout_margin="2dp"
+                android:layout_weight="1"
                 android:tag="@string/zero_btn_text"
                 android:text="@string/zero_btn_text"
                 android:theme="@style/Theme.Calculator.Secondary" />
 
             <Button
                 android:id="@+id/decimalBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
                 android:layout_margin="2dp"
+                android:layout_weight="1"
                 android:text="@string/decimal_btn_text"
                 android:theme="@style/Theme.Calculator.Secondary" />
 
             <Button
                 android:id="@+id/clearBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
                 android:layout_margin="2dp"
+                android:layout_weight="1"
                 android:text="@string/clear_btn_text"
                 android:theme="@style/Theme.Calculator.Danger" />
 
             <Button
                 android:id="@+id/equalsBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
                 android:layout_margin="2dp"
+                android:layout_weight="1"
                 android:text="@string/equal_btn_text"
                 android:theme="@style/Theme.Calculator.Primary" />
         </TableRow>

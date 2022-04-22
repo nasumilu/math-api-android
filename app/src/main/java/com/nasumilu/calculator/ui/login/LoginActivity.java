@@ -133,8 +133,8 @@ public class LoginActivity extends AppCompatActivity {
     private void updateUiWithUser(LoggedInUserView model) {
         // start the calculator activity
         Intent i = new Intent(this, CalculatorActivity.class);
+        i.putExtra("token", this.loginViewModel.getLoginResult().getValue().getSuccess().getToken());
         startActivity(i);
-
     }
 
     private void showLoginFailed(@StringRes Integer errorString) {
